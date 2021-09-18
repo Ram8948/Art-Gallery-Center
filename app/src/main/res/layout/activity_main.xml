@@ -28,15 +28,21 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:id="@+id/lin_top"
-            android:padding="20dp">
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_outline_cloud_upload_24"
                 android:text="@string/uploads"
-                android:background="@android:color/transparent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:layout_weight="1"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:drawableTint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                tools:targetApi="m" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,9 +70,12 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_outline_edit_24"
                 android:text="@string/edit"
-                android:background="@android:color/transparent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:layout_weight="1"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:drawableTint="@android:color/holo_blue_light"
+                android:textColor="@android:color/holo_blue_light"
+                tools:targetApi="m" />
         </LinearLayout>
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="match_parent"
@@ -86,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/lin_second"
-            android:padding="10dp"
+            android:padding="8dp"
             android:baselineAligned="false">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -168,14 +177,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/lin_third"
-            android:padding="10dp"
+            android:padding="8dp"
             android:gravity="center">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_margin="10dp">
+                android:layout_marginEnd="8dp">
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -195,7 +204,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_margin="10dp">
+                android:layout_marginEnd="8dp">
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -215,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_margin="10dp">
+                android:layout_marginEnd="8dp">
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -235,7 +244,7 @@
         <com.skydoves.colorpickerview.ColorPickerView
             android:id="@+id/colorPickerView"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="wrap_content"
             app:palette="@drawable/palettebar" />
     </LinearLayout>
     <LinearLayout
@@ -270,7 +279,8 @@
         android:background="@android:color/white"
         android:gravity="center_horizontal"
         android:id="@+id/launcher_screen"
-        android:focusable="true">
+        android:focusable="true"
+        android:visibility="gone">
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/logo"
             android:layout_width="100dp"

@@ -33,12 +33,11 @@ class MainActivity : AppCompatActivity() {
         vpTutorial = findViewById(R.id.vp_tutorial)
         toolbar = findViewById(R.id.toolbar)
         launcher_screen = findViewById(R.id.launcher_screen)
+        launcher_screen.visibility= View.VISIBLE
         btn_register = findViewById(R.id.btn_register)
         btn_register.setOnClickListener { launcher_screen.visibility= View.GONE }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // Important step, we enable button on the left side of the toolbar
-
-//        toolbar.navigationIcon = getDrawable(R.mipmap.ic_launcher)
         setSupportActionBar(toolbar)
     }
 
