@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">AGC</string>
     <string name="uploads">Uploads</string>
-    <string name="exhibitions">Exhibitions</string>
     <string name="revenue">Revenue</string>
+    <string name="john_lewis">John Lewis</string>
+    <string name="edit">Edit</string>
+    <string name="my_dashboard">My dashboard</string>
+    <string name="followers">Followers</string>
+    <string name="_50">50</string>
+    <string name="artworks">Artworks</string>
+    <string name="_21">21</string>
+    <string name="exhibitions">Exhibitions</string>
+    <string name="_120">120</string>
+    <string name="_2_3k">2.3K</string>
+    <string name="_43k">43K</string>
+    <string name="art_gallery_center">ART GALLERY CENTER</string>
+    <string name="register">Register</string>
+    <string name="me_as_a_collector">Me As a Collector</string>
+    <string name="track_my_application">Track My Application</string>
+    <string name="kotlin">KOTLIN</string>
+    <string name="react_native">REACT NATIVE</string>
 </resources>

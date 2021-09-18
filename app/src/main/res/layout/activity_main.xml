@@ -10,25 +10,18 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+    android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:layout_alignParentTop="true"
         android:backgroundTint="@android:color/white">
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        >
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +44,6 @@
             android:gravity="center"
             android:layout_weight="1">
             <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -62,7 +54,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="John Lewis"
+                android:text="@string/john_lewis"
                 android:id="@+id/txt_name"
                 android:textSize="24sp"
                 android:textColor="@android:color/black"/>
@@ -71,15 +63,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_outline_edit_24"
-                android:text="Edit"
+                android:text="@string/edit"
                 android:background="@android:color/transparent"
                 android:layout_weight="1"
                 android:textSize="12sp"/>
         </LinearLayout>
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My dashboard"
+            android:text="@string/my_dashboard"
             android:padding="8dp"
             android:checked="true"/>
         <View
@@ -87,16 +79,15 @@
             android:layout_height="0.5dp"
             android:background="@android:color/tertiary_text_light"
             android:id="@+id/sep1"
-            android:layout_above="@+id/lin_second"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_above="@+id/sep2"
             android:id="@+id/lin_second"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:baselineAligned="false">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,14 +97,14 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2.3K"
+                    android:text="@string/_2_3k"
                     android:id="@+id/txt_follower_val"
                     android:textSize="20sp"
                     android:textColor="@android:color/black"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Followers"
+                    android:text="@string/followers"
                     android:id="@+id/txt_follower"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -128,14 +119,14 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="50"
+                    android:text="@string/_50"
                     android:id="@+id/txt_artwork_val"
                     android:textSize="20sp"
                     android:textColor="@android:color/black"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Artworks"
+                    android:text="@string/artworks"
                     android:id="@+id/txt_artwork"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -150,14 +141,14 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="21"
+                    android:text="@string/_21"
                     android:id="@+id/txt_exhibition_val"
                     android:textSize="20sp"
                     android:textColor="@android:color/black"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Exhibitions"
+                    android:text="@string/exhibitions"
                     android:id="@+id/txt_exhibition"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -168,7 +159,6 @@
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:background="@android:color/tertiary_text_light"
-            android:layout_above="@+id/colorPickerView"
             android:id="@+id/sep2"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"/>
@@ -177,7 +167,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_above="@+id/sep2"
             android:id="@+id/lin_third"
             android:padding="10dp"
             android:gravity="center">
@@ -195,7 +184,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="120"
+                    android:text="@string/_120"
                     android:id="@+id/txt_favorite"
                     android:textSize="16sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -215,7 +204,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="43K"
+                    android:text="@string/_43k"
                     android:id="@+id/txt_arrow"
                     android:textSize="16sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -235,7 +224,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2.3K"
+                    android:text="@string/_2_3k"
                     android:id="@+id/txt_share"
                     android:textSize="16sp"
                     android:textColor="@android:color/darker_gray"/>
@@ -247,17 +236,12 @@
             android:id="@+id/colorPickerView"
             android:layout_width="match_parent"
             android:layout_height="72dp"
-            app:palette="@drawable/palettebar"
-            android:layout_alignParentBottom="true"/>
+            app:palette="@drawable/palettebar" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        >
+        android:orientation="vertical">
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_tutorial"
         style="@style/CustomTabLayout"
@@ -268,16 +252,14 @@
         android:layout_gravity="left"
         app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault.Small"
         app:tabMode="fixed"
-        tools:ignore="RtlHardcoded"
-        android:layout_centerInParent="true"/>
+        tools:ignore="RtlHardcoded" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp_tutorial"
         android:background="#f6f6f6"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_centerInParent="true"/>
+        android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>
     <RelativeLayout
@@ -287,7 +269,8 @@
         android:clickable="true"
         android:background="@android:color/white"
         android:gravity="center_horizontal"
-        android:id="@+id/launcher_screen">
+        android:id="@+id/launcher_screen"
+        android:focusable="true">
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/logo"
             android:layout_width="100dp"
@@ -301,7 +284,7 @@
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ART GALLERY CENTER"
+            android:text="@string/art_gallery_center"
             android:textColor="@android:color/black"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -322,15 +305,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_register"
             android:drawableStart="@drawable/ic_baseline_arrow_forward_24"
-            android:text="Register"
+            android:text="@string/register"
             android:textColor="@android:color/white"
             android:layout_marginEnd="12dp"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:drawableTint="@android:color/white"/>
+            android:drawableTint="@android:color/white"
+            tools:ignore="UnusedAttribute" />
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Me As a Collector"
+            android:text="@string/me_as_a_collector"
             android:textColor="@android:color/black"
             android:textSize="18sp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -339,13 +323,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_track"
             android:drawableStart="@drawable/ic_baseline_arrow_forward_24"
-            android:text="Track My Application"
+            android:text="@string/track_my_application"
             android:textColor="@android:color/darker_gray"
             android:layout_marginEnd="12dp"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:drawableTint="@android:color/darker_gray"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"/>
+            android:layout_marginBottom="40dp"
+            tools:ignore="UnusedAttribute" />
     </RelativeLayout>
 </RelativeLayout>

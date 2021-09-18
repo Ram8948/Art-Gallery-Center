@@ -26,6 +26,7 @@
         android:background="#E1303F9F"
         android:paddingStart="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        tools:ignore="RtlSymmetry" />
 
 </androidx.cardview.widget.CardView>

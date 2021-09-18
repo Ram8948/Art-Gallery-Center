@@ -13,6 +13,6 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="26sp"
-        android:text="REACT NATIVE" />
+        android:text="@string/react_native" />
 
 </FrameLayout>
