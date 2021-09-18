@@ -27,6 +27,7 @@
         android:paddingStart="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/white"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        android:lines="1"/>
 
 </androidx.cardview.widget.CardView>
